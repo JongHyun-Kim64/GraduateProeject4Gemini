@@ -1,0 +1,836 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sun May 25 21:39:43 2025
+# Process ID         : 7324
+# Current directory  : C:/Verilog_lab/study/1/4x4systolicadv/test3
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent3656 C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.xpr
+# Log file           : C:/Verilog_lab/study/1/4x4systolicadv/test3/vivado.log
+# Journal file       : C:/Verilog_lab/study/1/4x4systolicadv/test3\vivado.jou
+# Running On         : DESKTOP-L10GAB2
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 22631
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12500H
+# CPU Frequency      : 3110 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 16
+# Host memory        : 25392 MB
+# Swap memory        : 3087 MB
+# Total Virtual      : 28479 MB
+# Available Virtual  : 14982 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/user/.Xilinx/1/4x4systolicadv/test3' since last save.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project 'test3.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'test_TPU'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_TPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_TPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MAC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MMU_generate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MMU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sim_1/imports/sim/MMU_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_TPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_TPU_behav xil_defaultlib.test_TPU xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_TPU_behav xil_defaultlib.test_TPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MAC
+Compiling module xil_defaultlib.MMU_default
+Compiling module xil_defaultlib.test_TPU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_TPU_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1163.617 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_TPU_behav -key {Behavioral:sim_1:Functional:test_TPU} -tclbatch {test_TPU.tcl} -view {C:/Verilog_lab/study/1/4x4systolicadv/test3/test_TPU_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Verilog_lab/study/1/4x4systolicadv/test3/test_TPU_behav.wcfg
+source test_TPU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+[OUTPUT] time=0 y3=0xxxxxxxxx, y2=0xxxxxxxxx, y1=0xxxxxxxxx, y0=0xxxxxxxxx
+[OUTPUT] time=750000 y3=0x0, y2=0x0, y1=0x0, y0=0x0
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_TPU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1182.043 ; gain = 18.426
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MMU_generate.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MAC.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MMU_generate.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MMU_generate.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+[OUTPUT] time=5250000 y3=0xf20, y2=0x0, y1=0x0, y0=0x0
+[OUTPUT] time=5750000 y3=0xec0, y2=0xf8c, y1=0x0, y0=0x0
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'test_TPU'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_TPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_TPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MAC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MMU_generate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MMU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sim_1/imports/sim/MMU_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_TPU
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'test_TPU'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_TPU_behav xil_defaultlib.test_TPU xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_TPU_behav xil_defaultlib.test_TPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MAC
+Compiling module xil_defaultlib.MMU_default
+Compiling module xil_defaultlib.test_TPU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_TPU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Time resolution is 1 ps
+[OUTPUT] time=0 y3=0xxxxxxxxx, y2=0xxxxxxxxx, y1=0xxxxxxxxx, y0=0xxxxxxxxx
+[OUTPUT] time=750000 y3=0x0, y2=0x0, y1=0x0, y0=0x0
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1190.738 ; gain = 0.000
+run 1 us
+run 1 us
+run 1 us
+relaunch_sim
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MMU_generate.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MAC.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MMU_generate.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MMU_generate.v:]
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'test_TPU'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+ERROR: [Common 17-180] Spawn failed: No error
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_TPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MAC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MMU_generate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MMU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sim_1/imports/sim/MMU_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_TPU
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'test_TPU'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_TPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MAC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MMU_generate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MMU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sim_1/imports/sim/MMU_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_TPU
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'test_TPU'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_TPU_behav xil_defaultlib.test_TPU xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_TPU_behav xil_defaultlib.test_TPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MAC
+Compiling module xil_defaultlib.MMU_default
+Compiling module xil_defaultlib.test_TPU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_TPU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Time resolution is 1 ps
+[OUTPUT] time=0 y3=0xxxxxxxxx, y2=0xxxxxxxxx, y1=0xxxxxxxxx, y0=0xxxxxxxxx
+[OUTPUT] time=750000 y3=0x0, y2=0x0, y1=0x0, y0=0x0
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1190.738 ; gain = 0.000
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+[OUTPUT] time=5250000 y3=0xf20, y2=0x0, y1=0x0, y0=0x0
+[OUTPUT] time=5750000 y3=0xec0, y2=0xf8c, y1=0x0, y0=0x0
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MMU_generate.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MAC.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MMU_generate.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MMU_generate.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'test_TPU'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_TPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MAC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MMU_generate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MMU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sim_1/imports/sim/MMU_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_TPU
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'test_TPU'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_TPU_behav xil_defaultlib.test_TPU xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_TPU_behav xil_defaultlib.test_TPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MAC
+Compiling module xil_defaultlib.MMU_default
+Compiling module xil_defaultlib.test_TPU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_TPU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Time resolution is 1 ps
+[OUTPUT] time=0 y3=0xxxxxxxxx, y2=0xxxxxxxxx, y1=0xxxxxxxxx, y0=0xxxxxxxxx
+[OUTPUT] time=750000 y3=0x0, y2=0x0, y1=0x0, y0=0x0
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1191.625 ; gain = 0.000
+run 1 us
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MMU_generate.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MAC.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MMU_generate.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MMU_generate.v:]
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'test_TPU'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_TPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MAC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MMU_generate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MMU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sim_1/imports/sim/MMU_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_TPU
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'test_TPU'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_TPU_behav xil_defaultlib.test_TPU xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_TPU_behav xil_defaultlib.test_TPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MAC
+Compiling module xil_defaultlib.MMU_default
+Compiling module xil_defaultlib.test_TPU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_TPU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Time resolution is 1 ps
+INFO: [Common 17-344] 'relaunch_xsim_kernel' was cancelled
+INFO: [Common 17-344] 'relaunch_sim' was cancelled
+relaunch_sim
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MMU_generate.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MAC.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MMU_generate.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MMU_generate.v:]
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'test_TPU'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+ERROR: [Common 17-180] Spawn failed: No error
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_TPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MAC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MMU_generate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MMU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sim_1/imports/sim/MMU_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_TPU
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'test_TPU'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_TPU_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'test_TPU'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_TPU_behav xil_defaultlib.test_TPU xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_TPU_behav xil_defaultlib.test_TPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MAC
+Compiling module xil_defaultlib.MMU_default
+Compiling module xil_defaultlib.test_TPU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_TPU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Time resolution is 1 ps
+[OUTPUT] time=0 y3=0xxxxxxxxx, y2=0xxxxxxxxx, y1=0xxxxxxxxx, y0=0xxxxxxxxx
+[OUTPUT] time=750000 y3=0x0, y2=0x0, y1=0x0, y0=0x0
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1192.246 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'test_TPU'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_TPU_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'test_TPU'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_TPU_behav xil_defaultlib.test_TPU xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_TPU_behav xil_defaultlib.test_TPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+[OUTPUT] time=0 y3=0xxxxxxxxx, y2=0xxxxxxxxx, y1=0xxxxxxxxx, y0=0xxxxxxxxx
+[OUTPUT] time=750000 y3=0x0, y2=0x0, y1=0x0, y0=0x0
+run 1 us
+run 1 us
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MMU_generate.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sim_1\imports\sim\MMU_test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MAC.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MMU_generate.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MMU_generate.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MMU_generate.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sim_1\imports\sim\MMU_test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MAC.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MAC.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MAC.v:]
+relaunch_sim
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MMU_generate.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sim_1\imports\sim\MMU_test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MAC.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MMU_generate.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MMU_generate.v:]
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'test_TPU'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MMU_generate.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sim_1\imports\sim\MMU_test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MAC.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MAC.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MAC.v:]
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim'
+ERROR: [Common 17-180] Spawn failed: No error
+"xvlog --incr --relax -prj test_TPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MAC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MMU_generate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MMU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sim_1/imports/sim/MMU_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_TPU
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'test_TPU'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_TPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MAC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MMU_generate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MMU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sim_1/imports/sim/MMU_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_TPU
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'test_TPU'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_TPU_behav xil_defaultlib.test_TPU xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_TPU_behav xil_defaultlib.test_TPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" Line 1. Module MAC doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MAC
+Compiling module xil_defaultlib.MMU_default
+Compiling module xil_defaultlib.test_TPU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_TPU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Time resolution is 1 ps
+[OUTPUT] time=0 y3=0xxxxxxxxx, y2=0xxxxxxxxx, y1=0xxxxxxxxx, y0=0xxxxxxxxx
+[OUTPUT] time=750000 y3=0x0, y2=0x0, y1=0x0, y0=0x0
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1211.246 ; gain = 0.000
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MMU_generate.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sim_1\imports\sim\MMU_test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MAC.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MMU_generate.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MMU_generate.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MMU_generate.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sim_1\imports\sim\MMU_test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MAC.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MAC.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Verilog_lab\study\1\4x4systolicadv\test3\test3.srcs\sources_1\imports\rtl\MAC.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+[OUTPUT] time=4250000 y3=0x0, y2=0x1, y1=0x0, y0=0x0
+run 1 us
+[OUTPUT] time=5250000 y3=0xf20, y2=0x1, y1=0x0, y0=0x0
+[OUTPUT] time=5750000 y3=0xec0, y2=0xf8d, y1=0x0, y0=0x0
+run 1 us
+[OUTPUT] time=6250000 y3=0xe60, y2=0xf29, y1=0xea2, y0=0x0
+[OUTPUT] time=6750000 y3=0xe00, y2=0xec5, y1=0xe4c, y0=0xefb
+run 1 us
+[OUTPUT] time=7250000 y3=0x0, y2=0xe61, y1=0xdf6, y0=0xea2
+[OUTPUT] time=7750000 y3=0x0, y2=0x1, y1=0xda0, y0=0xe49
+run 1 us
+[OUTPUT] time=8250000 y3=0x0, y2=0x1, y1=0x0, y0=0xdf0
+[OUTPUT] time=8750000 y3=0x0, y2=0x1, y1=0x0, y0=0x0
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'test_TPU'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_TPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MAC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sources_1/imports/rtl/MMU_generate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MMU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.srcs/sim_1/imports/sim/MMU_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_TPU
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'test_TPU'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Verilog_lab/study/1/4x4systolicadv/test3/test3.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_TPU_behav xil_defaultlib.test_TPU xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_TPU_behav xil_defaultlib.test_TPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MAC
+Compiling module xil_defaultlib.MMU_default
+Compiling module xil_defaultlib.test_TPU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_TPU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+[OUTPUT] time=0 y3=0xxxxxxxxx, y2=0xxxxxxxxx, y1=0xxxxxxxxx, y0=0xxxxxxxxx
+[OUTPUT] time=750000 y3=0x0, y2=0x0, y1=0x0, y0=0x0
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1211.246 ; gain = 0.000
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+[OUTPUT] time=4250000 y3=0x0, y2=0x1, y1=0x0, y0=0x0
+run 1 us
+[OUTPUT] time=5250000 y3=0xf20, y2=0x1, y1=0x0, y0=0x0
+[OUTPUT] time=5750000 y3=0xec0, y2=0xf8d, y1=0x0, y0=0x0
+run 1 us
+[OUTPUT] time=6250000 y3=0xe60, y2=0xf29, y1=0xea2, y0=0x0
+[OUTPUT] time=6750000 y3=0xe00, y2=0xec5, y1=0xe4c, y0=0xefb
+save_wave_config {C:/Verilog_lab/study/1/4x4systolicadv/test3/test_TPU_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun May 25 21:50:51 2025...

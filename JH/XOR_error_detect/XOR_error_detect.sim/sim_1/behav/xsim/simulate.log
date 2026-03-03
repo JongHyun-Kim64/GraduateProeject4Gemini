@@ -1,0 +1,14 @@
+Time resolution is 1 ps
+Time | rst | w_in d_in p_in | w_out d_out p_out
+   0ns |   1 |   0    0    0  |   x     x      x
+   5ns |   1 |   0    0    0  |   0     0      0
+  10ns |   0 |   0    0    0  |   0     0      0
+  20ns |   0 |   1    0    1  |   0     0      0
+  25ns |   0 |   1    0    1  |   0     0      1
+  30ns |   0 |   0    1    0  |   0     0      1
+  35ns |   0 |   0    1    0  |   0     1      0
+  40ns |   0 |   1    1    1  |   0     1      0
+  45ns |   0 |   1    1    1  |   0     1      1
+  50ns |   0 |   0    0    0  |   0     1      1
+  55ns |   0 |   0    0    0  |   0     0      0
+$finish called at time : 70 ns : File "C:/Verilog_lab/study/1/XOR_error_detect/XOR_error_detect.srcs/sim_1/new/tb_xor_test.v" Line 78

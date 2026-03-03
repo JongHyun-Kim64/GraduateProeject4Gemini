@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_MMU_generate_2x2_behav/xsimk.exe -simmode gui -wdb tb_MMU_generate_2x2_behav.wdb -simrunnum 0 -socket 57165
+Design successfully loaded
+Design Loading Memory Usage: 14556 KB (Peak: 14556 KB)
+Design Loading CPU Usage: 296 ms
+Simulation completed
+Simulation Memory Usage: 15188 KB (Peak: 15188 KB)
+Simulation CPU Usage: 359 ms

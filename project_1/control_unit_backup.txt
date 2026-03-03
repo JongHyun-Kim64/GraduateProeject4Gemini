@@ -1,0 +1,52 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 2025/04/30 20:46:27
+// Design Name: 
+// Module Name: control_unit
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module control_unit(
+    input clk,
+    input rst,
+    output reg test_sig,
+    output reg shift_sig
+    );
+    
+    reg [3:0] clkcnt;
+    
+    always @(posedge clk, posedge rst) begin
+        if(rst) begin
+            clkcnt <= 0;
+            test_sig <= 0;
+            shift_sig <= 0;
+        end else begin
+            clkcnt <= clkcnt + 1;
+            case(clkcnt)
+                5: shift_sig <= 1;
+                10: begin
+                    test_sig <= 1;
+                    clkcnt <=0;
+                end
+                default: begin
+                    test_sig <= 0;
+                    shift_sig <= 0;
+                end
+            endcase
+        end
+    end
+endmodule

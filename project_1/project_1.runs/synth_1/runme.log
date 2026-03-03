@@ -1,0 +1,214 @@
+
+*** Running vivado
+    with args -log SystolicArray2x2.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source SystolicArray2x2.tcl
+
+
+ECHO가 설정되어 있지 않습니다.
+ECHO가 설정되어 있지 않습니다.
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source SystolicArray2x2.tcl -notrace
+create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 470.645 ; gain = 184.152
+Command: synth_design -top SystolicArray2x2 -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4992
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 918.504 ; gain = 443.910
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'SystolicArray2x2' [C:/Users/user/.Xilinx/project_1/project_1.srcs/sources_1/new/SystolicArray2x2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PE_MAC1' [C:/Users/user/.Xilinx/project_1/project_1.srcs/sources_1/new/PE_MAC1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PE_MAC1' (0#1) [C:/Users/user/.Xilinx/project_1/project_1.srcs/sources_1/new/PE_MAC1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SystolicArray2x2' (0#1) [C:/Users/user/.Xilinx/project_1/project_1.srcs/sources_1/new/SystolicArray2x2.v:23]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1025.645 ; gain = 551.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1025.645 ; gain = 551.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1025.645 ; gain = 551.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1025.645 ; gain = 551.051
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 4     
+	                8 Bit    Registers := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port act_in_1[7] in module SystolicArray2x2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port act_in_1[6] in module SystolicArray2x2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port act_in_1[5] in module SystolicArray2x2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port act_in_1[4] in module SystolicArray2x2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port act_in_1[3] in module SystolicArray2x2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port act_in_1[2] in module SystolicArray2x2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port act_in_1[1] in module SystolicArray2x2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port act_in_1[0] in module SystolicArray2x2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weight_in_0[7] in module SystolicArray2x2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weight_in_0[6] in module SystolicArray2x2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weight_in_0[5] in module SystolicArray2x2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weight_in_0[4] in module SystolicArray2x2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weight_in_0[3] in module SystolicArray2x2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weight_in_0[2] in module SystolicArray2x2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weight_in_0[1] in module SystolicArray2x2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port weight_in_0[0] in module SystolicArray2x2 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 1209.223 ; gain = 734.629
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:31 . Memory (MB): peak = 1209.223 ; gain = 734.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:31 . Memory (MB): peak = 1209.223 ; gain = 734.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1209.223 ; gain = 734.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1209.223 ; gain = 734.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1209.223 ; gain = 734.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1209.223 ; gain = 734.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1209.223 ; gain = 734.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1209.223 ; gain = 734.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    20|
+|3     |LUT2   |    50|
+|4     |LUT3   |     6|
+|5     |LUT4   |    42|
+|6     |LUT5   |     6|
+|7     |LUT6   |    74|
+|8     |FDCE   |    56|
+|9     |IBUF   |    18|
+|10    |OBUF   |    32|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+----------+------+
+|      |Instance |Module    |Cells |
++------+---------+----------+------+
+|1     |top      |          |   305|
+|2     |  pe00   |PE_MAC1   |    83|
+|3     |  pe01   |PE_MAC1_0 |   133|
+|4     |  pe11   |PE_MAC1_1 |    38|
++------+---------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1209.223 ; gain = 734.629
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 17 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1209.223 ; gain = 734.629
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1209.223 ; gain = 734.629
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1219.000 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1316.230 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+지정된 경로를 찾을 수 없습니다.
+Synth Design complete | Checksum: c1898fb3
+INFO: [Common 17-83] Releasing license: Synthesis
+16 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:42 . Memory (MB): peak = 1316.230 ; gain = 845.586
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1316.230 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/user/.Xilinx/project_1/project_1.runs/synth_1/SystolicArray2x2.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file SystolicArray2x2_utilization_synth.rpt -pb SystolicArray2x2_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 14 18:27:22 2025...

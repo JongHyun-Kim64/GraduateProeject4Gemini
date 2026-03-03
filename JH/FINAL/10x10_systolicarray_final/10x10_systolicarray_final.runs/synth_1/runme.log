@@ -1,0 +1,345 @@
+
+*** Running vivado
+    with args -log MMU.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source MMU.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Wed May 28 02:31:57 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source MMU.tcl -notrace
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+Command: read_checkpoint -auto_incremental -incremental C:/Verilog_lab/study/1/JH/10x10_systolicarray_final/10x10_systolicarray_final.srcs/utils_1/imports/synth_1/MMU.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Verilog_lab/study/1/JH/10x10_systolicarray_final/10x10_systolicarray_final.srcs/utils_1/imports/synth_1/MMU.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top MMU -part xc7z010iclg225-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010i'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010i'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+INFO: [Synth 8-7075] Helper process launched with PID 3088
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 811.180 ; gain = 473.516
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'MMU' [C:/Verilog_lab/study/1/JH/10x10_systolicarray_final/10x10_systolicarray_final.srcs/sources_1/imports/rtl/MMU_generate.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MAC' [C:/Verilog_lab/study/1/JH/10x10_systolicarray_final/10x10_systolicarray_final.srcs/sources_1/imports/rtl/MAC.v:3]
+	Parameter depth bound to: 10 - type: integer 
+	Parameter bit_width bound to: 8 - type: integer 
+	Parameter acc_width bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MAC' (0#1) [C:/Verilog_lab/study/1/JH/10x10_systolicarray_final/10x10_systolicarray_final.srcs/sources_1/imports/rtl/MAC.v:3]
+INFO: [Synth 8-6157] synthesizing module 'control_unit' [C:/Verilog_lab/study/1/JH/10x10_systolicarray_final/10x10_systolicarray_final.srcs/sources_1/new/control_unit.v:23]
+	Parameter depth bound to: 10 - type: integer 
+	Parameter bit_width bound to: 8 - type: integer 
+	Parameter acc_width bound to: 32 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Verilog_lab/study/1/JH/10x10_systolicarray_final/10x10_systolicarray_final.srcs/sources_1/new/control_unit.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'control_unit' (0#1) [C:/Verilog_lab/study/1/JH/10x10_systolicarray_final/10x10_systolicarray_final.srcs/sources_1/new/control_unit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MMU' (0#1) [C:/Verilog_lab/study/1/JH/10x10_systolicarray_final/10x10_systolicarray_final.srcs/sources_1/imports/rtl/MMU_generate.v:3]
+WARNING: [Synth 8-6014] Unused sequential element curr_state_reg was removed.  [C:/Verilog_lab/study/1/JH/10x10_systolicarray_final/10x10_systolicarray_final.srcs/sources_1/new/control_unit.v:36]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 938.574 ; gain = 600.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 938.574 ; gain = 600.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010iclg225-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 938.574 ; gain = 600.910
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010iclg225-1L
+INFO: [Synth 8-802] inferred FSM for state register 'next_state_reg' in module 'control_unit'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                               00
+                  W_LOAD |                              010 |                               01
+                     MAC |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'next_state_reg' using encoding 'one-hot' in module 'control_unit'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 938.574 ; gain = 600.910
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 100   
+	   2 Input   11 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 600   
++---XORs : 
+	               32 Bit    Wide XORs := 300   
+	                8 Bit    Wide XORs := 600   
++---Registers : 
+	              320 Bit    Registers := 1     
+	               32 Bit    Registers := 100   
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 200   
+	                1 Bit    Registers := 601   
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 100   
+	   2 Input   16 Bit        Muxes := 100   
+	   2 Input   11 Bit        Muxes := 1     
+	   3 Input   11 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 310   
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 100   
+	   3 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:01:18 . Memory (MB): peak = 1599.402 ; gain = 1261.738
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:01:20 . Memory (MB): peak = 1599.402 ; gain = 1261.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:57 ; elapsed = 00:01:26 . Memory (MB): peak = 1599.402 ; gain = 1261.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:59 ; elapsed = 00:01:30 . Memory (MB): peak = 1599.402 ; gain = 1261.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:01:30 . Memory (MB): peak = 1599.402 ; gain = 1261.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:59 ; elapsed = 00:01:31 . Memory (MB): peak = 1599.402 ; gain = 1261.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:01:31 . Memory (MB): peak = 1599.402 ; gain = 1261.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:00 ; elapsed = 00:01:31 . Memory (MB): peak = 1599.402 ; gain = 1261.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:00 ; elapsed = 00:01:32 . Memory (MB): peak = 1599.402 ; gain = 1261.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |  1510|
+|3     |LUT1   |     1|
+|4     |LUT2   |  3322|
+|5     |LUT3   |  4870|
+|6     |LUT4   |  2772|
+|7     |LUT5   |  1813|
+|8     |LUT6   |  6176|
+|9     |FDRE   |  4414|
+|10    |FDSE   |     1|
+|11    |IBUF   |   162|
+|12    |OBUF   |   320|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------------------+-------------+------+
+|      |Instance                        |Module       |Cells |
++------+--------------------------------+-------------+------+
+|1     |top                             |             | 25362|
+|2     |  \GEN_ROW[0].GEN_COL[0].u_mac  |MAC          |   205|
+|3     |  \GEN_ROW[0].GEN_COL[1].u_mac  |MAC_0        |   244|
+|4     |  \GEN_ROW[0].GEN_COL[2].u_mac  |MAC_1        |   244|
+|5     |  \GEN_ROW[0].GEN_COL[3].u_mac  |MAC_2        |   244|
+|6     |  \GEN_ROW[0].GEN_COL[4].u_mac  |MAC_3        |   244|
+|7     |  \GEN_ROW[0].GEN_COL[5].u_mac  |MAC_4        |   244|
+|8     |  \GEN_ROW[0].GEN_COL[6].u_mac  |MAC_5        |   244|
+|9     |  \GEN_ROW[0].GEN_COL[7].u_mac  |MAC_6        |   244|
+|10    |  \GEN_ROW[0].GEN_COL[8].u_mac  |MAC_7        |   250|
+|11    |  \GEN_ROW[0].GEN_COL[9].u_mac  |MAC_8        |   204|
+|12    |  \GEN_ROW[1].GEN_COL[0].u_mac  |MAC_9        |   186|
+|13    |  \GEN_ROW[1].GEN_COL[1].u_mac  |MAC_10       |   229|
+|14    |  \GEN_ROW[1].GEN_COL[2].u_mac  |MAC_11       |   229|
+|15    |  \GEN_ROW[1].GEN_COL[3].u_mac  |MAC_12       |   229|
+|16    |  \GEN_ROW[1].GEN_COL[4].u_mac  |MAC_13       |   229|
+|17    |  \GEN_ROW[1].GEN_COL[5].u_mac  |MAC_14       |   229|
+|18    |  \GEN_ROW[1].GEN_COL[6].u_mac  |MAC_15       |   229|
+|19    |  \GEN_ROW[1].GEN_COL[7].u_mac  |MAC_16       |   229|
+|20    |  \GEN_ROW[1].GEN_COL[8].u_mac  |MAC_17       |   227|
+|21    |  \GEN_ROW[1].GEN_COL[9].u_mac  |MAC_18       |   197|
+|22    |  \GEN_ROW[2].GEN_COL[0].u_mac  |MAC_19       |   227|
+|23    |  \GEN_ROW[2].GEN_COL[1].u_mac  |MAC_20       |   227|
+|24    |  \GEN_ROW[2].GEN_COL[2].u_mac  |MAC_21       |   227|
+|25    |  \GEN_ROW[2].GEN_COL[3].u_mac  |MAC_22       |   227|
+|26    |  \GEN_ROW[2].GEN_COL[4].u_mac  |MAC_23       |   227|
+|27    |  \GEN_ROW[2].GEN_COL[5].u_mac  |MAC_24       |   227|
+|28    |  \GEN_ROW[2].GEN_COL[6].u_mac  |MAC_25       |   227|
+|29    |  \GEN_ROW[2].GEN_COL[7].u_mac  |MAC_26       |   227|
+|30    |  \GEN_ROW[2].GEN_COL[8].u_mac  |MAC_27       |   225|
+|31    |  \GEN_ROW[2].GEN_COL[9].u_mac  |MAC_28       |   176|
+|32    |  \GEN_ROW[3].GEN_COL[0].u_mac  |MAC_29       |   238|
+|33    |  \GEN_ROW[3].GEN_COL[1].u_mac  |MAC_30       |   238|
+|34    |  \GEN_ROW[3].GEN_COL[2].u_mac  |MAC_31       |   238|
+|35    |  \GEN_ROW[3].GEN_COL[3].u_mac  |MAC_32       |   238|
+|36    |  \GEN_ROW[3].GEN_COL[4].u_mac  |MAC_33       |   238|
+|37    |  \GEN_ROW[3].GEN_COL[5].u_mac  |MAC_34       |   238|
+|38    |  \GEN_ROW[3].GEN_COL[6].u_mac  |MAC_35       |   238|
+|39    |  \GEN_ROW[3].GEN_COL[7].u_mac  |MAC_36       |   238|
+|40    |  \GEN_ROW[3].GEN_COL[8].u_mac  |MAC_37       |   236|
+|41    |  \GEN_ROW[3].GEN_COL[9].u_mac  |MAC_38       |   179|
+|42    |  \GEN_ROW[4].GEN_COL[0].u_mac  |MAC_39       |   235|
+|43    |  \GEN_ROW[4].GEN_COL[1].u_mac  |MAC_40       |   235|
+|44    |  \GEN_ROW[4].GEN_COL[2].u_mac  |MAC_41       |   235|
+|45    |  \GEN_ROW[4].GEN_COL[3].u_mac  |MAC_42       |   235|
+|46    |  \GEN_ROW[4].GEN_COL[4].u_mac  |MAC_43       |   235|
+|47    |  \GEN_ROW[4].GEN_COL[5].u_mac  |MAC_44       |   235|
+|48    |  \GEN_ROW[4].GEN_COL[6].u_mac  |MAC_45       |   235|
+|49    |  \GEN_ROW[4].GEN_COL[7].u_mac  |MAC_46       |   235|
+|50    |  \GEN_ROW[4].GEN_COL[8].u_mac  |MAC_47       |   233|
+|51    |  \GEN_ROW[4].GEN_COL[9].u_mac  |MAC_48       |   184|
+|52    |  \GEN_ROW[5].GEN_COL[0].u_mac  |MAC_49       |   249|
+|53    |  \GEN_ROW[5].GEN_COL[1].u_mac  |MAC_50       |   249|
+|54    |  \GEN_ROW[5].GEN_COL[2].u_mac  |MAC_51       |   249|
+|55    |  \GEN_ROW[5].GEN_COL[3].u_mac  |MAC_52       |   249|
+|56    |  \GEN_ROW[5].GEN_COL[4].u_mac  |MAC_53       |   249|
+|57    |  \GEN_ROW[5].GEN_COL[5].u_mac  |MAC_54       |   249|
+|58    |  \GEN_ROW[5].GEN_COL[6].u_mac  |MAC_55       |   249|
+|59    |  \GEN_ROW[5].GEN_COL[7].u_mac  |MAC_56       |   249|
+|60    |  \GEN_ROW[5].GEN_COL[8].u_mac  |MAC_57       |   247|
+|61    |  \GEN_ROW[5].GEN_COL[9].u_mac  |MAC_58       |   190|
+|62    |  \GEN_ROW[6].GEN_COL[0].u_mac  |MAC_59       |   239|
+|63    |  \GEN_ROW[6].GEN_COL[1].u_mac  |MAC_60       |   239|
+|64    |  \GEN_ROW[6].GEN_COL[2].u_mac  |MAC_61       |   239|
+|65    |  \GEN_ROW[6].GEN_COL[3].u_mac  |MAC_62       |   239|
+|66    |  \GEN_ROW[6].GEN_COL[4].u_mac  |MAC_63       |   239|
+|67    |  \GEN_ROW[6].GEN_COL[5].u_mac  |MAC_64       |   239|
+|68    |  \GEN_ROW[6].GEN_COL[6].u_mac  |MAC_65       |   239|
+|69    |  \GEN_ROW[6].GEN_COL[7].u_mac  |MAC_66       |   239|
+|70    |  \GEN_ROW[6].GEN_COL[8].u_mac  |MAC_67       |   237|
+|71    |  \GEN_ROW[6].GEN_COL[9].u_mac  |MAC_68       |   188|
+|72    |  \GEN_ROW[7].GEN_COL[0].u_mac  |MAC_69       |   251|
+|73    |  \GEN_ROW[7].GEN_COL[1].u_mac  |MAC_70       |   251|
+|74    |  \GEN_ROW[7].GEN_COL[2].u_mac  |MAC_71       |   251|
+|75    |  \GEN_ROW[7].GEN_COL[3].u_mac  |MAC_72       |   251|
+|76    |  \GEN_ROW[7].GEN_COL[4].u_mac  |MAC_73       |   251|
+|77    |  \GEN_ROW[7].GEN_COL[5].u_mac  |MAC_74       |   251|
+|78    |  \GEN_ROW[7].GEN_COL[6].u_mac  |MAC_75       |   251|
+|79    |  \GEN_ROW[7].GEN_COL[7].u_mac  |MAC_76       |   251|
+|80    |  \GEN_ROW[7].GEN_COL[8].u_mac  |MAC_77       |   249|
+|81    |  \GEN_ROW[7].GEN_COL[9].u_mac  |MAC_78       |   201|
+|82    |  \GEN_ROW[8].GEN_COL[0].u_mac  |MAC_79       |   251|
+|83    |  \GEN_ROW[8].GEN_COL[1].u_mac  |MAC_80       |   254|
+|84    |  \GEN_ROW[8].GEN_COL[2].u_mac  |MAC_81       |   254|
+|85    |  \GEN_ROW[8].GEN_COL[3].u_mac  |MAC_82       |   254|
+|86    |  \GEN_ROW[8].GEN_COL[4].u_mac  |MAC_83       |   254|
+|87    |  \GEN_ROW[8].GEN_COL[5].u_mac  |MAC_84       |   254|
+|88    |  \GEN_ROW[8].GEN_COL[6].u_mac  |MAC_85       |   254|
+|89    |  \GEN_ROW[8].GEN_COL[7].u_mac  |MAC_86       |   254|
+|90    |  \GEN_ROW[8].GEN_COL[8].u_mac  |MAC_87       |   252|
+|91    |  \GEN_ROW[8].GEN_COL[9].u_mac  |MAC_88       |   199|
+|92    |  \GEN_ROW[9].GEN_COL[0].u_mac  |MAC_89       |   192|
+|93    |  \GEN_ROW[9].GEN_COL[1].u_mac  |MAC_90       |   216|
+|94    |  \GEN_ROW[9].GEN_COL[2].u_mac  |MAC_91       |   216|
+|95    |  \GEN_ROW[9].GEN_COL[3].u_mac  |MAC_92       |   216|
+|96    |  \GEN_ROW[9].GEN_COL[4].u_mac  |MAC_93       |   216|
+|97    |  \GEN_ROW[9].GEN_COL[5].u_mac  |MAC_94       |   216|
+|98    |  \GEN_ROW[9].GEN_COL[6].u_mac  |MAC_95       |   216|
+|99    |  \GEN_ROW[9].GEN_COL[7].u_mac  |MAC_96       |   216|
+|100   |  \GEN_ROW[9].GEN_COL[8].u_mac  |MAC_97       |   214|
+|101   |  \GEN_ROW[9].GEN_COL[9].u_mac  |MAC_98       |   184|
+|102   |  ctrl                          |control_unit |  1410|
++------+--------------------------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:00 ; elapsed = 00:01:32 . Memory (MB): peak = 1599.402 ; gain = 1261.738
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:00 ; elapsed = 00:01:32 . Memory (MB): peak = 1599.402 ; gain = 1261.738
+Synthesis Optimization Complete : Time (s): cpu = 00:01:00 ; elapsed = 00:01:32 . Memory (MB): peak = 1599.402 ; gain = 1261.738
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.367 . Memory (MB): peak = 1599.402 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1510 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1637.840 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 84a556be
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:38 . Memory (MB): peak = 1637.840 ; gain = 1306.836
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.068 . Memory (MB): peak = 1637.840 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Verilog_lab/study/1/JH/10x10_systolicarray_final/10x10_systolicarray_final.runs/synth_1/MMU.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file MMU_utilization_synth.rpt -pb MMU_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May 28 02:33:40 2025...

@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sun May 25 15:47:11 2025
+# Process ID         : 42572
+# Current directory  : C:/Verilog_lab/study/1/JH/systolicarray_scanchain_with_xor
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent14360 C:\Verilog_lab\study\1\JH\systolicarray_scanchain_with_xor\systolicarray_scanchain_with_xor.xpr
+# Log file           : C:/Verilog_lab/study/1/JH/systolicarray_scanchain_with_xor/vivado.log
+# Journal file       : C:/Verilog_lab/study/1/JH/systolicarray_scanchain_with_xor\vivado.jou
+# Running On         : DESKTOP-L10GAB2
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 22631
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12500H
+# CPU Frequency      : 3110 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 16
+# Host memory        : 25392 MB
+# Swap memory        : 5368 MB
+# Total Virtual      : 30761 MB
+# Available Virtual  : 11716 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Verilog_lab/study/1/JH/systolicarray_scanchain_with_xor/systolicarray_scanchain_with_xor.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Verilog_lab/study/1/systolicarray_scanchain_with_xor' since last save.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Verilog_lab/study/1/JH/systolicarray_scanchain_with_xor/systolicarray_scanchain_with_xor.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun May 25 17:57:10 2025...

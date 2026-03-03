@@ -1,0 +1,4 @@
+1. MAC_Generate 모듈에  Control Unit 모듈 추가
+Control 모듈 기능: 현재 rst이 꺼지면 2클락 뒤에 Control 신호를 활성화하여 가중치 프리로드를 수행하고, 이후에는 MAC 연산을 수행하도록 자동으로 모드 변환
+추가할 기능: 개별 MAC으로부터 Faulty Flag 신호를 받아 Scna_En 신호를 활성화하여 스캔 모드로 변환
+2. Control Unit 모듈을 통해 전체를 제어하는 테스트벤치 코드 완성
